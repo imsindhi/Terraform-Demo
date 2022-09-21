@@ -23,3 +23,7 @@ module "StorageAccount" {
   resource_group_name = "terraform-demo"
   location = "West US"
 }
+
+module "Instance"{
+  source = "./Instances"
+}
